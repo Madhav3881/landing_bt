@@ -1,0 +1,313 @@
+*{
+	margin: 0;
+	padding: 0;
+	outline: none;
+	border: none;
+	box-sizing: border-box;
+}
+*:before,
+*:after {
+
+	box-sizing: border-box;
+}
+html{
+	width: 100%;
+	height: 100%;
+	background-image: url("../gif/bg.gif");
+	background-repeat: no-repeat;
+}
+.wrap{
+	display: grid;
+	grid-template-columns: 210px 200px 210px 210px 200px 210px 210px 210px;
+	color: white;
+	width: auto;
+	height: auto;
+	margin: 35px 20px;
+	float: left;
+}
+
+div[class^="metro"] {
+	float: left;
+	margin: 0 10px 10px 0;
+	height: 200px;
+	position: relative;
+	cursor: pointer;
+	transition: all .4s ease;
+	user-drag: element;
+	border: solid 0 mintcream;
+	overflow-x: hidden;
+    overflow-y: hidden;
+    background-size: 200px 200px;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+div[class^="metro"]:hover{
+	border: solid 2px mintcream;
+}
+div[class^="metro"]:active {
+	transform: scale(.98, .98);
+}
+.metro-big {
+	width: 400px;
+}
+.metro-small {
+	width: 200px;
+}
+.glimpse{
+	float: left;
+	margin: 0 10px 10px 0;
+	height: 410px;
+	position: relative;
+	cursor: pointer;
+	transition: all .4s ease;
+	user-drag: element;
+	border: solid 0 transparent;
+	width: 610px;
+	grid-column-start: 4;
+    grid-column-end: 7;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    background: #85C1E9;
+    animation: flip 5.1s linear infinite;
+	transform: rotateX(0deg);
+	overflow-x: hidden;
+    overflow-y: hidden;
+}
+.glimpse:hover{
+	border: solid 2px mintcream;
+}
+.glimpse:active {
+	transform: scale(.98, .98);
+}
+.last{
+	margin-right: 0 !important;
+}
+.start{
+	color: white;
+	font: normal 50px 'Yanone Kaffeesatz', Segoe, segoe UI, DejaVu Sans, Trebuchet MS, Verdana, "sans-serif";
+	margin-bottom: 50px;
+	user-select: none;
+	display: inline-block;
+	transition: all .3s ease;
+	text-decoration: none;
+}
+.start:hover{
+	text-shadow: 0 0 4px white;
+	cursor: pointer;
+}
+.space{
+	margin-bottom: 110px;
+}
+.label{
+	position: absolute;
+	color: white;
+	font: 750 20px sans-serif;
+	left: 10px;
+	user-select: none;
+}
+.bottom{
+	bottom: 5px;
+}
+.event1{
+	background: url(../icons/quiz.png);
+	animation: flip 5s linear infinite;
+	transform: rotateX(0deg);
+	grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    background-color: #93bc75;
+	height: 200px;
+	width: 400px;
+}
+.event2{
+	background: url(../icons/forensics.png);
+	animation: flip 5.5s linear infinite;
+	transform: rotateX(0deg);
+	grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    background-color: #cfbc75;
+	height: 200px;
+	width: 400px;
+}
+.event3{
+	background: url(../icons/streax.png);
+	animation: flip 4.5s linear infinite;
+	transform: rotateX(0deg);
+	grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    background-color: #ffffff;
+	height: 200px;
+	width: 200px;
+}
+.event4{
+	background: url(../icons/workshop.png);
+	animation: flip 6s linear infinite;
+	transform: rotateX(0deg);
+	grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    background-color: #fe462d;
+	height: 200px;
+	width: 400px;
+}
+.event5{
+	background: url(../icons/magazine.png);
+	animation: flip 5.3s linear infinite;
+	transform: rotateX(0deg);
+	grid-column-start: 7;
+    grid-column-end: 8;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    background-color: #e1ab86;
+	height: 200px;
+	width: 400px;
+}
+.event6{
+	background: url(../icons/idp.png);
+	animation: flip 4.8s linear infinite;
+	transform: rotateX(0deg);
+	grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    background-color: #4a88ff;
+	height: 200px;
+	width: 200px;
+}
+.event7{
+	background: url(../icons/biobiz.png);
+	animation: flip 6.2s linear infinite;
+	transform: rotateX(0deg);
+	grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 3; 
+    background-color: #e7f7d9;
+	height: 200px;
+	width: 400px;
+}
+.event8{
+	background: url(../icons/conference.png);
+	animation: flip 7s linear infinite;
+	transform: rotateX(0deg);
+	grid-column-start: 7;
+    grid-column-end: 8;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    background-color: #fdf926;
+	height: 200px;
+	width: 400px;
+}
+.event9{
+	background: url(../icons/poster.png);
+	animation: flip 6.5s linear infinite;
+	transform: rotateX(0deg);
+	grid-column-start: 7;
+    grid-column-end: 8;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    background-color: #7def6a;
+	height: 200px;
+	width: 400px;
+}
+.event10{
+	background: url(../icons/lectures.png);
+	animation: flip 4s linear infinite;
+	transform: rotateX(0deg);
+	grid-column-start: 6;
+    grid-column-end: 7;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    background-color: #4df9ed;
+	height: 200px;
+	width: 200px;
+}
+img[class^="images"]{
+	animation-name: slide;
+    animation-iteration-count: infinite;
+}
+.img1{
+	animation-duration: 10s;
+}
+.img2{
+	animation-duration: 11s;
+}
+.img3{
+	animation-duration: 15s;
+}
+.img4{
+	animation-duration: 13s;
+}
+.img5{
+	animation-duration: 12s;
+}
+.img6{
+	animation-duration: 9s;
+}
+.img7{
+	animation-duration: 7s;
+}
+.img8{
+	animation-duration: 16s;
+}
+.img9{
+	animation-duration: 8s;
+}
+.img10{
+	animation-duration: 14s;
+}
+div[class^="icon"]{
+	width: 130px;
+	height: 130px;
+	margin: 20px auto;
+	background-size: 130px 130px;
+}
+.icon-event10{
+	background: url(../icons/lectures.png);
+}
+::-webkit-scrollbasr{
+	width: 10px;
+	height: 10px;
+	cursor: pointer;
+}
+::-webkit-scrollbar-track{
+	-webkit-box-shadow: inset 0 0 6px 2px rgba(0,0,0,0.3);
+	background: #007491;
+}
+::-webkit-scrollbar-thumb{
+	background: #002f3b;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+	cursor: pointer;
+}
+::selection {
+	background: mintcream;
+}
+@keyframes flip{
+	0%,10%{
+		transform: rotateX(0deg);
+	}
+	30%{
+		transform: rotateX(360deg);
+	}
+	100%{
+		transform: rotateX(360deg);
+	}
+}
+
+@keyframes slide{
+	0%,10%{
+		transform: translateY(0);
+	}
+	25%,50%{
+		transform: translateY(200px);
+	}
+	90%,100%{
+		transform: translateY(0);
+	}
+}
